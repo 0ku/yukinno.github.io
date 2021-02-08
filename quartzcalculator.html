@@ -123,13 +123,36 @@ input[type=submit]:hover {
         <label for="adCount">Anti Destruction (Max 100)</label>
         <input type="number" id="adCount" name="adCount"><br><br>
 
+        <label for="bdtCount">Blue Defensive Tag Transmitter (Max 100)</label>
+        <input type="number" id="bdtCount" name="bdtCount"><br><br>
+
+        <label for="botCount">Blue Offensive Tag Transmitter (Max 100)</label>
+        <input type="number" id="botCount" name="botCount"><br><br>
+
+        <label for="eboxCount">Ether Box (100000) (Max 100)</label>
+        <input type="number" id="eboxCount" name="eboxCount"><br><br>
+
         <label for="ecCount">Energy Converters (Max 120)</label>
         <input type="number" id="ecCount" name="ecCount"><br><br>
+
+        <label for="rakCount">Red Akashas (Max 50)</label>
+        <input type="number" id="rakCount" name="rakCount"><br><br>
 
         <label for="akCount">Akashas (Max 100)</label>
         <input type="number" id="akCount" name="akCount"><br><br>
         
+        <label for="sdbCount">SD Brooch Qube (Max 10)</label>
+        <input type="number" id="sdbCount" name="sdbCount"><br><br>
 
+        <label for="fotCount">FOT Brooch Qube (Max 10)</label>
+        <input type="number" id="fotCount" name="fotCount"><br><br>
+
+        <label for="bskCount">BSK Brooch Qube (Max 10)</label>
+        <input type="number" id="bskCount" name="bskCount"><br><br>
+
+        <label for="sinCount">SIN Brooch Qube (Max 10)</label>
+        <input type="number" id="sinCount" name="sinCount"><br><br>
+        
         <button class="button1" onClick = "calculateQuartz()">Calculate</button>
       </form>
       <!------------------------------------------------------------------------------->
@@ -164,15 +187,45 @@ input[type=submit]:hover {
               totalQuartz = totalQuartz + (adCount*5)
               totalDZ= totalQuartz+ (adCount*50000)
 
+              var bdtCount = document.getElementById('bdtCount').value
+              totalQuartz = totalQuartz + (bdtCount*10)
+              totalDZ= totalQuartz+ (bdtCount*250000)
+
+              var botCount = document.getElementById('botCount').value
+              totalQuartz = totalQuartz + (botCount*10)
+              totalDZ= totalQuartz+ (botCount*250000)
+
+              var eboxCount = document.getElementById('eboxCount').value
+              totalQuartz = totalQuartz + (eboxCount*5)
+              totalDZ= totalQuartz+ (eboxCount*50000)
+
               var ecCount = document.getElementById('ecCount').value
               totalQuartz = totalQuartz + (ecCount*5)
               totalDZ= totalQuartz+ (ecCount*50000)
+
+              var rakCount = document.getElementById('rakCount').value
+              totalQuartz = totalQuartz + (rakCount*10)
+              totalDZ= totalQuartz+ (rakCount*100000)
 
               var akCount = document.getElementById('akCount').value
               totalQuartz = totalQuartz + (akCount*5)
               totalDZ= totalQuartz+ (akCount*50000)
 
+              var sdbCount = document.getElementById('sdbCount').value
+              totalQuartz = totalQuartz + (sdbCount*10)
+              totalDZ= totalQuartz+ (sdbCount*250000)
 
+              var fotCount = document.getElementById('fotCount').value
+              totalQuartz = totalQuartz + (fotCount*10)
+              totalDZ= totalQuartz+ (fotCount*250000)
+
+              var bskCount = document.getElementById('bskCount').value
+              totalQuartz = totalQuartz + (bskCount*10)
+              totalDZ= totalQuartz+ (bskCount*250000)
+
+              var sinCount = document.getElementById('sinCount').value
+              totalQuartz = totalQuartz + (sinCount*10)
+              totalDZ= totalQuartz+ (sinCount*250000)
 
 
               document.getElementById('output').value= totalQuartz

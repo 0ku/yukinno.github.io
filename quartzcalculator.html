@@ -174,82 +174,106 @@ input[type=submit]:hover {
       <!------------------------------------------------------------------------------->
       </div>
       <script>
+          function checkValidity(val,max) {
+            if ((val < 0 ) || (val > max)) {
+              alert("The final value might be inaccurate as one (or more) of your values are either too low or too high")
+            }
+          }
           function calculateQuartz() {
               var totalQuartz = 0
               var totalZenny = 0
               var rdtCount = document.getElementById('rdtCount').value
+              checkValidity(rdtCount,document.getElementById('rdtCount').max)
               totalQuartz = totalQuartz + (rdtCount*50)
               totalZenny= totalZenny+ (rdtCount*1000000)
 
               var rotCount = document.getElementById('rotCount').value
+              checkValidity(rotCount,document.getElementById('rotCount').max)
               totalQuartz = totalQuartz + (rotCount*50)
               totalZenny= totalZenny+ (rotCount*1000000)
 
               var ydtCount = document.getElementById('ydtCount').value
+              checkValidity(ydtCount,document.getElementById('ydtCount').max)
               totalQuartz = totalQuartz + (ydtCount*15)
               totalZenny= totalZenny+ (ydtCount*300000)
         
               var yotCount = document.getElementById('yotCount').value
+              checkValidity(yotCount,document.getElementById('yotCount').max)
               totalQuartz = totalQuartz + (yotCount*15)
               totalZenny= totalZenny+ (yotCount*300000)
 
               var alCount = document.getElementById('alCount').value
+              checkValidity(alCount,document.getElementById('alCount').max)
               totalQuartz = totalQuartz + (alCount*5)
               totalZenny= totalZenny+ (alCount*50000)
 
               var adCount = document.getElementById('adCount').value
+              checkValidity(adCount,document.getElementById('adCount').max)
               totalQuartz = totalQuartz + (adCount*5)
               totalZenny= totalZenny+ (adCount*50000)
 
               var bdtCount = document.getElementById('bdtCount').value
+              checkValidity(bdtCount,document.getElementById('bdtCount').max)
               totalQuartz = totalQuartz + (bdtCount*10)
               totalZenny= totalZenny+ (bdtCount*250000)
 
               var botCount = document.getElementById('botCount').value
+              checkValidity(botCount,document.getElementById('botCount').max)
               totalQuartz = totalQuartz + (botCount*10)
               totalZenny= totalZenny+ (botCount*250000)
 
               var eboxCount = document.getElementById('eboxCount').value
+              checkValidity(eboxCount,document.getElementById('eboxCount').max)
               totalQuartz = totalQuartz + (eboxCount*5)
               totalZenny= totalZenny+ (eboxCount*50000)
 
               var ecCount = document.getElementById('ecCount').value
+              checkValidity(ecCount,document.getElementById('ecCount').max)
               totalQuartz = totalQuartz + (ecCount*5)
               totalZenny= totalZenny+ (ecCount*50000)
 
               var rakCount = document.getElementById('rakCount').value
+              checkValidity(rakCount,document.getElementById('rakCount').max)
               totalQuartz = totalQuartz + (rakCount*10)
               totalZenny= totalZenny+ (rakCount*100000)
 
               var akCount = document.getElementById('akCount').value
+              checkValidity(akCount,document.getElementById('akCount').max)
               totalQuartz = totalQuartz + (akCount*5)
               totalZenny= totalZenny+ (akCount*50000)
 
               var sdbCount = document.getElementById('sdbCount').value
+              checkValidity(sdbCount,document.getElementById('sdbCount').max)
               totalQuartz = totalQuartz + (sdbCount*10)
               totalZenny= totalZenny+ (sdbCount*250000)
 
               var fotCount = document.getElementById('fotCount').value
+              checkValidity(fotCount,document.getElementById('fotCount').max)
               totalQuartz = totalQuartz + (fotCount*10)
               totalZenny= totalZenny+ (fotCount*250000)
 
               var bskCount = document.getElementById('bskCount').value
+              checkValidity(bskCount,document.getElementById('bskCount').max)
               totalQuartz = totalQuartz + (bskCount*10)
               totalZenny= totalZenny+ (bskCount*250000)
 
               var sinCount = document.getElementById('sinCount').value
+              checkValidity(sinCount,document.getElementById('sinCount').max)
               totalQuartz = totalQuartz + (sinCount*10)
               totalZenny= totalZenny+ (sinCount*250000)
 
               var lfReset = document.getElementById('lfReset').value
+              checkValidity(lfReset,document.getElementById('lfReset').max)
               totalQuartz = totalQuartz + (lfReset*30)
               totalZenny= totalZenny+ (lfReset*1000000)
 
               var cGift = document.getElementById('cGift').value
+              checkValidity(cGift,document.getElementById('cGift').max)
               totalQuartz = totalQuartz + (cGift*50)
               totalZenny= totalZenny+ (cGift*1000000)
 
               var jChest = document.getElementById('jChest').value
+              checkValidity(jChest,document.getElementById('jChest').max)
               totalQuartz = totalQuartz + (jChest*50)
               totalZenny= totalZenny+ (jChest*1000000)
 

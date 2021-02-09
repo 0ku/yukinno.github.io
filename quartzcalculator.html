@@ -105,52 +105,52 @@ input[type=submit]:hover {
       <p>Use this calculator to determine the amount of Quartz you need for your crafts!</p>
       <div class="container">
       <form onsubmit="return false">
-        <label for="rdtCount">Red Defensive Tag Transmitter Cost: 1000000 DZ, 50 Quartz (Max 2)</label>
+        <label for="rdtCount">Red Defensive Tag Transmitter Cost: 1mil DZ, 50 Quartz (Max 2)</label>
         <input type="number" min="0" id="rdtCount" name="rdtCount"><br><br>
 
-        <label for="rotCount">Red Offensive Tag Transmitter | Cost: 1000000 DZ, 50 Quartz (Max 2)</label>
+        <label for="rotCount">Red Offensive Tag Transmitter | Cost: 1mil DZ, 50 Quartz (Max 2)</label>
         <input type="number" min="0" id="rotCount" name="rotCount"><br><br>
 
-        <label for="ydtCount">Yellow Defensive Tag Transmitter | Cost: 300000 DZ, 15 Quartz (Max 30)</label>
+        <label for="ydtCount">Yellow Defensive Tag Transmitter | Cost: 300k DZ, 15 Quartz (Max 30)</label>
         <input type="number" min="0" id="ydtCount" name="ydtCount"><br><br>
 
-        <label for="yotCount">Yellow Offensive Tag Transmitter | Cost: 300000 DZ, 15 Quartz (Max 30)</label>
+        <label for="yotCount">Yellow Offensive Tag Transmitter | Cost: 300k DZ, 15 Quartz (Max 30)</label>
         <input type="number" min="0" id="yotCount" name="yotCount"><br><br>
 
-        <label for="alCount">Anti Limiters | Cost: 50000 DZ, 5 Quartz (Max 7)</label>
+        <label for="alCount">Anti Limiters | Cost: 50k DZ, 5 Quartz (Max 7)</label>
         <input type="number" min="0" id="alCount" name="alCount"><br><br>
 
-        <label for="adCount">Anti Destruction | Cost: 50000 DZ, 5 Quartz (Max 100)</label>
+        <label for="adCount">Anti Destruction | Cost: 50k DZ, 5 Quartz (Max 100)</label>
         <input type="number" min="0" id="adCount" name="adCount"><br><br>
 
-        <label for="bdtCount">Blue Defensive Tag Transmitter | Cost: 250000 DZ, 10 Quartz (Max 100)</label>
+        <label for="bdtCount">Blue Defensive Tag Transmitter | Cost: 250k DZ, 10 Quartz (Max 100)</label>
         <input type="number" min="0" id="bdtCount" name="bdtCount"><br><br>
 
-        <label for="botCount">Blue Offensive Tag Transmitter | Cost: 250000 DZ, 10 Quartz (Max 100)</label>
+        <label for="botCount">Blue Offensive Tag Transmitter | Cost: 250k DZ, 10 Quartz (Max 100)</label>
         <input type="number" min="0" id="botCount" name="botCount"><br><br>
 
-        <label for="eboxCount">Ether Box (100000) | Cost: 50000 DZ, 5 Quartz (Max 100)</label>
+        <label for="eboxCount">Ether Box (100000) | Cost: 50k DZ, 5 Quartz (Max 100)</label>
         <input type="number" min="0" id="eboxCount" name="eboxCount"><br><br>
 
-        <label for="ecCount">Energy Converters | Cost: 50000 DZ, 5 Quartz (Max 120)</label>
+        <label for="ecCount">Energy Converters | Cost: 50k DZ, 5 Quartz (Max 120)</label>
         <input type="number" min="0" id="ecCount" name="ecCount"><br><br>
 
-        <label for="rakCount">Red Akashas | Cost: 100000 DZ, 10 Quartz (Max 50)</label>
+        <label for="rakCount">Red Akashas | Cost: 100k DZ, 10 Quartz (Max 50)</label>
         <input type="number" min="0" id="rakCount" name="rakCount"><br><br>
 
-        <label for="akCount">Akashas | Cost: 50000 DZ, 5 Quartz (Max 100)</label>
+        <label for="akCount">Akashas | Cost: 50k DZ, 5 Quartz (Max 100)</label>
         <input type="number" min="0" id="akCount" name="akCount"><br><br>
         
-        <label for="sdbCount">SD Brooch Qube | Cost: 250000 DZ, 10 Quartz (Max 10)</label>
+        <label for="sdbCount">SD Brooch Qube | Cost: 250k DZ, 10 Quartz (Max 10)</label>
         <input type="number" min="0" id="sdbCount" name="sdbCount"><br><br>
 
-        <label for="fotCount">FOT Brooch Qube | Cost: 250000 DZ, 10 Quartz (Max 10)</label>
+        <label for="fotCount">FOT Brooch Qube | Cost: 250k DZ, 10 Quartz (Max 10)</label>
         <input type="number" min="0" id="fotCount" name="fotCount"><br><br>
 
-        <label for="bskCount">BSK Brooch Qube | Cost: 250000 DZ, 10 Quartz (Max 10)</label>
+        <label for="bskCount">BSK Brooch Qube | Cost: 250k DZ, 10 Quartz (Max 10)</label>
         <input type="number" min="0" id="bskCount" name="bskCount"><br><br>
 
-        <label for="sinCount">SIN Brooch Qube | Cost: 250000 DZ, 10 Quartz (Max 10)</label>
+        <label for="sinCount">SIN Brooch Qube | Cost: 250k DZ, 10 Quartz (Max 10)</label>
         <input type="number" min="0" id="sinCount" name="sinCount"><br><br>
         
         <button class="button1" onClick = "calculateQuartz()">Calculate</button>
@@ -165,69 +165,70 @@ input[type=submit]:hover {
               var totalDZ = 0
               var rdtCount = document.getElementById('rdtCount').value
               totalQuartz = totalQuartz + (rdtCount*50)
-              totalDZ= totalQuartz+ (rdtCount*1000000)
+              totalDZ= totalDZ+ (rdtCount*1000000)
 
               var rotCount = document.getElementById('rotCount').value
               totalQuartz = totalQuartz + (rotCount*50)
-              totalDZ= totalQuartz+ (rotCount*1000000)
+              totalDZ= totalDZ+ (rotCount*1000000)
 
               var ydtCount = document.getElementById('ydtCount').value
               totalQuartz = totalQuartz + (ydtCount*15)
-              totalDZ= totalQuartz+ (ydtCount*300000)
+              totalDZ= totalDZ+ (ydtCount*300000)
         
               var yotCount = document.getElementById('yotCount').value
               totalQuartz = totalQuartz + (yotCount*15)
-              totalDZ= totalQuartz+ (yotCount*300000)
+              totalDZ= totalDZ+ (yotCount*300000)
 
               var alCount = document.getElementById('alCount').value
               totalQuartz = totalQuartz + (alCount*5)
-              totalDZ= totalQuartz+ (alCount*50000)
+              totalDZ= totalDZ+ (alCount*50000)
 
               var adCount = document.getElementById('adCount').value
               totalQuartz = totalQuartz + (adCount*5)
-              totalDZ= totalQuartz+ (adCount*50000)
+              totalDZ= totalDZ+ (adCount*50000)
 
               var bdtCount = document.getElementById('bdtCount').value
               totalQuartz = totalQuartz + (bdtCount*10)
-              totalDZ= totalQuartz+ (bdtCount*250000)
+              totalDZ= totalDZ+ (bdtCount*250000)
 
               var botCount = document.getElementById('botCount').value
               totalQuartz = totalQuartz + (botCount*10)
-              totalDZ= totalQuartz+ (botCount*250000)
+              totalDZ= totalDZ+ (botCount*250000)
 
               var eboxCount = document.getElementById('eboxCount').value
               totalQuartz = totalQuartz + (eboxCount*5)
-              totalDZ= totalQuartz+ (eboxCount*50000)
+              totalDZ= totalDZ+ (eboxCount*50000)
 
               var ecCount = document.getElementById('ecCount').value
               totalQuartz = totalQuartz + (ecCount*5)
-              totalDZ= totalQuartz+ (ecCount*50000)
+              totalDZ= totalDZ+ (ecCount*50000)
 
               var rakCount = document.getElementById('rakCount').value
               totalQuartz = totalQuartz + (rakCount*10)
-              totalDZ= totalQuartz+ (rakCount*100000)
+              totalDZ= totalDZ+ (rakCount*100000)
 
               var akCount = document.getElementById('akCount').value
               totalQuartz = totalQuartz + (akCount*5)
-              totalDZ= totalQuartz+ (akCount*50000)
+              totalDZ= totalDZ+ (akCount*50000)
 
               var sdbCount = document.getElementById('sdbCount').value
               totalQuartz = totalQuartz + (sdbCount*10)
-              totalDZ= totalQuartz+ (sdbCount*250000)
+              totalDZ= totalDZ+ (sdbCount*250000)
 
               var fotCount = document.getElementById('fotCount').value
               totalQuartz = totalQuartz + (fotCount*10)
-              totalDZ= totalQuartz+ (fotCount*250000)
+              totalDZ= totalDZ+ (fotCount*250000)
 
               var bskCount = document.getElementById('bskCount').value
               totalQuartz = totalQuartz + (bskCount*10)
-              totalDZ= totalQuartz+ (bskCount*250000)
+              totalDZ= totalDZ+ (bskCount*250000)
 
               var sinCount = document.getElementById('sinCount').value
               totalQuartz = totalQuartz + (sinCount*10)
-              totalDZ= totalQuartz+ (sinCount*250000)
+              totalDZ= totalDZ+ (sinCount*250000)
 
-              document.getElementById('output').value= totalQuartz
+              document.getElementById('output1').value= totalQuartz
+              document.getElementById('output2').value= totalDZ
           }
 
       </script>

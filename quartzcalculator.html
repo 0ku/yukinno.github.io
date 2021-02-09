@@ -130,7 +130,7 @@ input[type=submit]:hover {
         <input type="number" min="0" max ="100"id="botCount" name="botCount"><br><br>
 
         <label for="eboxCount">Ether Box (100000) <br> Cost: 50k Zenny, 5 Quartz (Max 50)</label>
-        <input type="number" min="0" max ="50"id="eboxCount" name="eboxCount"><br><br>
+        <input type="number" min="0" max ="50" id="eboxCount" name="eboxCount"><br><br>
 
         <label for="ecCount">Energy Converters <br> Cost: 50k Zenny, 5 Quartz (Max 120)</label>
         <input type="number" min="0" max ="120" id="ecCount" name="ecCount"><br><br>
@@ -175,7 +175,8 @@ input[type=submit]:hover {
       </div>
       <script>
           function checkValidity(val,max) {
-            if ((val < 0 ) || (val > max)) {
+            val = parseInt(val)
+            if (val < 0 || val > max) {
               alert("The final value might be inaccurate as one (or more) of your values are either too low or too high")
             }
           }

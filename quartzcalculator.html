@@ -253,8 +253,11 @@ input[type=submit]:hover {
               totalQuartz = totalQuartz + (jChest*50)
               totalDZ= totalDZ+ (jChest*1000000)
 
-              document.getElementById('output1').value= totalQuartz
-              document.getElementById('output2').value= totalDZ
+              document.getElementById('output1').value= numberWithCommas(totalQuartz)
+              document.getElementById('output2').value= numberWithCommas(totalDZ)
+          }
+          function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
           }
 
       </script>

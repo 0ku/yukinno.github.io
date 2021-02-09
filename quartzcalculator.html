@@ -152,7 +152,10 @@ input[type=submit]:hover {
 
         <label for="sinCount">SIN Brooch Qube <br> Cost: 250k DZ, 10 Quartz (Max 10)</label>
         <input type="number" min="0" id="sinCount" name="sinCount"><br><br>
-        
+
+        <label for="lfReset">LF Reset Ticket<br> Cost: 1mil DZ, 30 Quartz (Max 5)</label>
+        <input type="number" min="0" id="lfReset" name="lfReset"><br><br>
+
         <button class="button1" onClick = "calculateQuartz()">Calculate</button>
       </form>
       <!------------------------------------------------------------------------------->
@@ -228,6 +231,10 @@ input[type=submit]:hover {
               var sinCount = document.getElementById('sinCount').value
               totalQuartz = totalQuartz + (sinCount*10)
               totalDZ= totalDZ+ (sinCount*250000)
+
+              var lfReset = document.getElementById('lfReset').value
+              totalQuartz = totalQuartz + (sinCount*30)
+              totalDZ= totalDZ+ (lfReset*1000000)
 
               document.getElementById('output1').value= totalQuartz
               document.getElementById('output2').value= totalDZ

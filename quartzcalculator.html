@@ -156,6 +156,12 @@ input[type=submit]:hover {
         <label for="lfReset">LF Reset Ticket<br> Cost: 1mil DZ, 30 Quartz (Max 5)</label>
         <input type="number" min="0" max ="5"id="lfReset" name="lfReset"><br><br>
 
+        <label for="cGift">Chloe's Gift (Fashion)<br> Cost: 1mil DZ, 50 Quartz (Max 1)</label>
+        <input type="number" min="0" max ="1"id="cGift" name="cGift"><br><br>
+
+        <label for="jChest">Jewellery Chest<br> Cost: 1mil DZ, 50 Quartz (Max 1)</label>
+        <input type="number" min="0" max ="1"id="jChest" name="jChest"><br><br>
+
         <button class="button1" onClick = "calculateQuartz()">Calculate</button>
       </form>
       <!------------------------------------------------------------------------------->
@@ -235,6 +241,14 @@ input[type=submit]:hover {
               var lfReset = document.getElementById('lfReset').value
               totalQuartz = totalQuartz + (lfReset*30)
               totalDZ= totalDZ+ (lfReset*1000000)
+
+              var cGift = document.getElementById('cGift').value
+              totalQuartz = totalQuartz + (cGift*50)
+              totalDZ= totalDZ+ (cGift*1000000)
+
+              var jChest = document.getElementById('jChest').value
+              totalQuartz = totalQuartz + (cGift*50)
+              totalDZ= totalDZ+ (jChest*1000000)
 
               document.getElementById('output1').value= totalQuartz
               document.getElementById('output2').value= totalDZ

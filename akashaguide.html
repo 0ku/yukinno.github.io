@@ -93,6 +93,11 @@ layout: default
 }
 /* -----------------------------------------------------------*/
 /* button styling */
+
+span {
+  margin: 100px;
+}
+
 .button1 {
   border: none;
   background-color: black;
@@ -123,6 +128,22 @@ layout: default
   width: 100%;
   clear: both;
 }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 <body>
@@ -138,10 +159,12 @@ layout: default
 
       <h3>Akasha Guide</h3>
       <p>Use this guide to find information on all Akasha cards</p>
+      <div class = "row">
+    <div class="column">
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">5-Star Akasha cards</button>
         <div id="5starAkashas" class="dropdown-content">
-          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
           <a href="#about">About</a>
           <a href="#base">Base</a>
           <a href="#blog">Blog</a>
@@ -151,7 +174,14 @@ layout: default
           <a href="#tools">Tools</a>
         </div>
       </div>
-      <span> test</span>
+    </div>
+    <div class="column">
+        <span> <img id="myImg" src="http://placehold.it/100x100/green" width="107"     height="98"> </span>
+    </div>
+    <div class="column">
+        <span> <img id="myImg" src="http://placehold.it/100x100/green" width="107"     height="98"> </span>
+    </div>
+    </div>
 <script>
     function myFunction() {
   document.getElementById("5starAkashas").classList.toggle("show");

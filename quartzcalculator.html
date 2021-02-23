@@ -156,6 +156,9 @@ input[type=submit]:hover {
         <label for="lfReset">LF Reset Ticket<br> Cost: 1mil Zenny, 30 Quartz (Max 5)</label>
         <input type="number" min="0" max ="5"id="lfReset" name="lfReset"><br><br>
 
+        <label for="vsReset">VS Reset Ticket<br> Cost: 1mil Zenny, 30 Quartz (Max 7)</label>
+        <input type="number" min="0" max ="7"id="vsReset" name="vsReset"><br><br>
+
         <label for="cGift">Chloe's Gift (Fashion)<br> Cost: 1mil Zenny, 50 Quartz (Max 1)</label>
         <input type="number" min="0" max ="1"id="cGift" name="cGift"><br><br>
 
@@ -267,6 +270,11 @@ input[type=submit]:hover {
               checkValidity(lfReset,document.getElementById('lfReset').max)
               totalQuartz = totalQuartz + (lfReset*30)
               totalZenny= totalZenny+ (lfReset*1000000)
+
+              var vsReset = document.getElementById('vsReset').value
+              checkValidity(vsReset,document.getElementById('vsReset').max)
+              totalQuartz = totalQuartz + (vsReset*30)
+              totalZenny= totalZenny+ (vsReset*1000000)
 
               var cGift = document.getElementById('cGift').value
               checkValidity(cGift,document.getElementById('cGift').max)

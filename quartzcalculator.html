@@ -92,6 +92,7 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
+  <h2>FeedNet's BSW Guide</h2>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="downloadguide.html">Download Guide</a>
@@ -101,7 +102,7 @@ input[type=submit]:hover {
         <a href="akashaguide.html">Akasha Guide</a>
         <a href="#about">About</a>
       </div>
-
+      
       <h3>Quartz Calculator</h3>
       <p>Use this calculator to determine the amount of Quartz you need for your crafts!</p>
       <div class="container">
@@ -142,17 +143,14 @@ input[type=submit]:hover {
         <label for="akCount">Akashas <br> Cost: 50k Zenny, 5 Quartz (Max 100)</label>
         <input type="number" min="0" max ="100"id="akCount" name="akCount"><br><br>
         
-        <label for="sdbCount">SD Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
-        <input type="number" min="0" max ="10"id="sdbCount" name="sdbCount"><br><br>
+        <label for="atkCount">Attack Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
+        <input type="number" min="0" max ="10"id="atkCount" name="atkCount"><br><br>
 
-        <label for="fotCount">FOT Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
-        <input type="number" min="0" max ="10"id="fotCount" name="fotCount"><br><br>
+        <label for="defCount">Defense Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
+        <input type="number" min="0" max ="10"id="defCount" name="defCount"><br><br>
 
-        <label for="bskCount">BSK Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
-        <input type="number" min="0" max ="10"id="bskCount" name="bskCount"><br><br>
-
-        <label for="sinCount">SIN Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
-        <input type="number" min="0" max ="10"id="sinCount" name="sinCount"><br><br>
+        <label for="utilCount">Utility Brooch Qube <br> Cost: 250k Zenny, 10 Quartz (Max 10)</label>
+        <input type="number" min="0" max ="10"id="utilCount" name="utilCount"><br><br>
 
         <label for="lfReset">LF Reset Ticket<br> Cost: 1mil Zenny, 30 Quartz (Max 5)</label>
         <input type="number" min="0" max ="5"id="lfReset" name="lfReset"><br><br>
@@ -247,25 +245,20 @@ input[type=submit]:hover {
               totalQuartz = totalQuartz + (akCount*5)
               totalZenny= totalZenny+ (akCount*50000)
 
-              var sdbCount = document.getElementById('sdbCount').value
-              checkValidity(sdbCount,document.getElementById('sdbCount').max)
-              totalQuartz = totalQuartz + (sdbCount*10)
-              totalZenny= totalZenny+ (sdbCount*250000)
+              var atkCount = document.getElementById('atkCount').value
+              checkValidity(atkCount,document.getElementById('atkCount').max)
+              totalQuartz = totalQuartz + (atkCount*10)
+              totalZenny= totalZenny+ (atkCount*250000)
 
-              var fotCount = document.getElementById('fotCount').value
-              checkValidity(fotCount,document.getElementById('fotCount').max)
-              totalQuartz = totalQuartz + (fotCount*10)
-              totalZenny= totalZenny+ (fotCount*250000)
+              var defCount = document.getElementById('defCount').value
+              checkValidity(defCount,document.getElementById('defCount').max)
+              totalQuartz = totalQuartz + (defCount*10)
+              totalZenny= totalZenny+ (defCount*250000)
 
-              var bskCount = document.getElementById('bskCount').value
-              checkValidity(bskCount,document.getElementById('bskCount').max)
-              totalQuartz = totalQuartz + (bskCount*10)
-              totalZenny= totalZenny+ (bskCount*250000)
-
-              var sinCount = document.getElementById('sinCount').value
-              checkValidity(sinCount,document.getElementById('sinCount').max)
-              totalQuartz = totalQuartz + (sinCount*10)
-              totalZenny= totalZenny+ (sinCount*250000)
+              var utilCount = document.getElementById('utilCount').value
+              checkValidity(utilCount,document.getElementById('utilCount').max)
+              totalQuartz = totalQuartz + (utilCount*10)
+              totalZenny= totalZenny+ (utilCount*250000)
 
               var lfReset = document.getElementById('lfReset').value
               checkValidity(lfReset,document.getElementById('lfReset').max)

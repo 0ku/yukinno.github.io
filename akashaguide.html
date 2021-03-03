@@ -138,6 +138,11 @@ span {
   width: 20%;
   padding: 5px;
 }
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 5px;
+}
 
 /* Clearfix (clear floats) */
 .row::after {
@@ -156,6 +161,7 @@ span {
 </style>
 </head>
 <body>
+    <h2>FeedNet's BSW Guide</h2>
     <div class="topnav">
         <a href="index.html">Home</a>
         <a href="downloadguide.html">Download Guide</a>
@@ -169,7 +175,7 @@ span {
       <h3>Akasha Guide</h3>
       <p>Use this guide to find information on all Akasha cards</p>
       <div class = "row">
-    <div class="column">
+    <div class="column1">
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">5-Star Akasha cards</button>
         <div id="5starAkashas" class="dropdown-content">
@@ -185,12 +191,39 @@ span {
       </div>
     </div>
     <div class="column">
-        <span> <img id="myImg" src="http://placehold.it/100x100/green" width="107"     height="98"> </span>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">5-Star Akasha cards</button>
+            <div id="5starAkashas" class="dropdown-content">
+              <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
+              <a href="#about">About</a>
+              <a href="#base">Base</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#custom">Custom</a>
+              <a href="#support">Support</a>
+              <a href="#tools">Tools</a>
+            </div>
+          </div>
     </div>
     <div class="column">
-        <span> <img id="myImg" src="http://placehold.it/100x100/green" width="107"     height="98"> </span>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">5-Star Akasha cards</button>
+            <div id="5starAkashas" class="dropdown-content">
+              <input type="text" placeholder="Search" id="myInput" onkeyup="filterFunction()">
+              <a href="#about">About</a>
+              <a href="#base">Base</a>
+              <a href="#blog">Blog</a>
+              <a href="#contact">Contact</a>
+              <a href="#custom">Custom</a>
+              <a href="#support">Support</a>
+              <a href="#tools">Tools</a>
+            </div>
+          </div>
     </div>
     </div>
+<img id="myImg" src="Akasha Images/bigplasticaNormal.PNG">
+<img id="myImg" src="Akasha Images/bigplasticaHidden.PNG">
+    
 <script>
     function myFunction() {
   document.getElementById("5starAkashas").classList.toggle("show");
